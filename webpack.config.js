@@ -16,8 +16,8 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.css$/,
-                use: ['css-loader', 'style-loader']
+                test: /\.(s*)css$/,
+                use: ['style-loader','css-loader', 'sass-loader' ]
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
