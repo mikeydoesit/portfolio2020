@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-const Socials = () => {
-    return (
-        <div id="socials">
-            <FontAwesomeIcon icon={faTwitter} color="white" />
-            <FontAwesomeIcon icon={faLinkedinIn} color="white" />
-        </div>
-    )
-}
+export default class Socials extends Component{
+    constructor(props) {
+        super(props);
+    }
 
-export default Socials
+    render() {
+        return (
+            <div id="socialIcon">
+                <FontAwesomeIcon icon={this.props.icon} size="xs" color="white" />
+            </div>
+        )
+    }
+}

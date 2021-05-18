@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ProjectsSVG from './svgs/ProjectsSVG';
+import ProjectsMondrian from './ProjectsMondrian';
 
 export default class Projects extends Component{
     constructor(){
@@ -7,9 +9,10 @@ export default class Projects extends Component{
 
     render(){
         return(
-            <div id="projects">
+            <div id="works">
                 <div id="projects-container">
-
+                    <ProjectsSVG />
+                    <ProjectsMondrian />
                 </div>
             </div>
         )

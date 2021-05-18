@@ -1,0 +1,109 @@
+#homepage {
+    background: $bgdBlack url(./img/portfoliobgd.jpg) no-repeat right bottom;
+    background-size: 60%;
+    height: 100vh;
+    width: 100%;
+    padding: 0 42px;
+
+    #header {
+        font-family: $headerFont;
+        width: 100%;
+        height: 14vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 21px 0px;
+
+        #logo {
+            flex-grow: 2;
+            height: 50px;
+        }
+        #nav {
+            color: $textColor;
+            flex-grow: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            .headerDivider {
+                height: 7px;
+                width: 7px;
+                background-color: $headerDividerColor;
+                border-radius: 50%;
+            }
+            .headerLink {
+                cursor: pointer;
+            }
+        }
+        #socials {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 7px;
+
+            svg:first-of-type {
+                margin-right: 21px;
+            }
+        }
+    }
+    #cta-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        height: 86vh;
+
+        #cta {
+            width: 85%;
+            color: $textColor;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: $headerFont;
+
+            #cta-inner {
+                width: 100%;
+
+                h1 {
+                    font-size: 3rem;
+                    padding-bottom: 9px;
+                    letter-spacing: 1px;
+                }
+                p {
+                    font-size: 2rem;
+                    padding-bottom: 21px;
+                    
+                }
+                #ctaButton {
+                    border: solid 1px $textColor;
+                    border-radius: 4px;
+                    width: fit-content;
+                    padding: 11px 21px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    cursor: pointer;
+    
+                    #iconWrapper {
+                        width: 1.7rem;
+                        height: 1.7rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: deeppink;
+                        border-radius: 50%;
+                    }
+        
+                    span {
+                        display:inline-block;
+                        padding-left: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

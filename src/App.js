@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Homepage from './components/Homepage';
 import './App.scss';
-import Projects from './components/Projects.js';
+import Projects from './components/Projects';
+import About from './components/About';
+import Contact from './components/Contact';
 
 export default class App extends Component{
     constructor() {
@@ -13,6 +15,8 @@ export default class App extends Component{
             <div id="app">
                 <Homepage />
                 <Projects />
+                <About />
+                <Contact />
             </div>
         );
     }
